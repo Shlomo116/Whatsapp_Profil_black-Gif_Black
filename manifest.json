@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "WhatsApp Profile Blocker",
+  "version": "1.0",
+  "description": "Blocks profile pictures in WhatsApp Web",
+  "permissions": ["activeTab"],
+  "content_scripts": [
+    {
+      "matches": ["*://web.whatsapp.com/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+} 

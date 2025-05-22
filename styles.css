@@ -1,0 +1,12 @@
+/* Hide WhatsApp profile pictures */
+img[src*="profile"] {
+    display: none !important;
+}
+
+/* Add a placeholder style for where profile pictures would be */
+img[src*="profile"]::before {
+    content: "👤";
+    display: inline-block;
+    font-size: 24px;
+    color: #128C7E;
+} 
